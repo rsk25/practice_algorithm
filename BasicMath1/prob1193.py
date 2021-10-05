@@ -27,11 +27,11 @@ def pos_inline(n: int) -> str:
     for i in range(lp+1):
         acc += i
     if is_even(lp):
-        nu = lp - (n-acc)
-        de = 1 + (n-acc)
+        nu = lp - (acc-n)
+        de = 1 + (acc-n)
     else:
-        nu = 1 + (n-acc)
-        de = lp - (n-acc)
+        nu = 1 + (acc-n)
+        de = lp - (acc-n)
     return str(nu)+'/'+str(de)
 
 
