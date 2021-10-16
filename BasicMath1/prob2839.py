@@ -1,13 +1,13 @@
 import sys
 
 def num_bags(target_weight: int) -> int:
-    total_weight = 0
-    while target_weight > total_weight:
-        if total_weight % 3 == 0:
+    weight_list = list()
+    weight = 5
+    while target_weight > 0:
+        target_weight -= weight
+        if not target_weight > 0:
 
-        total_weight += 5
-        if target_weight < total_weight:
-            total_weight -= 5
-            total_weight += 3
+        weight_list.append(weight)
+
 
 if __name__ == '__main__':
